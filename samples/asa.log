@@ -1,0 +1,14 @@
+Oct 17 10:15:01 asa01 : %ASA-6-302013: Built inbound TCP connection 1001 for outside:198.51.100.10/52344 (198.51.100.10/52344) to inside:10.0.0.5/443 (10.0.0.5/443)
+Oct 17 10:15:02 asa01 : %ASA-6-302014: Teardown TCP connection 1001 for outside:198.51.100.10/52344 to inside:10.0.0.5/443 duration 0:00:01 bytes 5120 TCP FINs
+Oct 17 10:15:05 asa01 : %ASA-4-106023: Deny tcp src outside:203.0.113.5/4444 dst inside:10.0.0.8/22 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Oct 17 10:15:06 asa01 : %ASA-4-106023: Deny tcp src outside:203.0.113.5/4445 dst inside:10.0.0.8/23 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Oct 17 10:15:07 asa01 : %ASA-4-106023: Deny tcp src outside:203.0.113.5/4446 dst inside:10.0.0.8/3389 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Oct 17 10:15:10 asa01 : %ASA-3-710003: TCP access denied by ACL from 192.0.2.44/50211 to outside:198.51.100.1/22
+Oct 17 10:15:12 asa01 : %ASA-6-605005: Login permitted from 10.0.0.100/51123 to inside:10.0.0.1/ssh for user "admin"
+Oct 17 10:15:20 asa01 : %ASA-2-106001: Inbound TCP connection denied from 203.0.113.9/1234 to 10.0.0.8/80 flags SYN on interface outside
+Oct 17 10:15:21 asa01 : %ASA-6-302013: Built inbound TCP connection 1002 for outside:198.51.100.11/52345 (198.51.100.11/52345) to inside:10.0.0.5/443 (10.0.0.5/443)
+Oct 17 10:15:22 asa01 : %ASA-7-609001: Built local-host inside:10.0.0.5
+Oct 17 10:15:30 asa01 : %ASA-1-105003: (Primary) Monitoring on interface inside waiting
+this line is not a cisco syslog line
+Oct 17 10:15:40 rtr01 : %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+Oct 17 10:15:41 rtr01 : %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
